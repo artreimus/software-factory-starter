@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "example-readonly": {
+      "command": "node",
+      "args": ["./mcp/example-readonly-server.js"],
+      "env": {
+        "EXAMPLE_MODE": "readonly"
+      }
+    }
+  }
+}
+
