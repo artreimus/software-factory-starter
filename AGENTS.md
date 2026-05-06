@@ -12,6 +12,8 @@ This is the operating contract for AI agents and contributors in this repository
 - Do not create commits unless explicitly asked.
 - Validate before finalizing. Run the strongest practical tests, lint, type checks, builds, or review checks available.
 - Record durable lessons in docs, specs, skills, or tests instead of leaving them only in chat.
+- Use subagents only for independent work with clear ownership and no overlapping write sets.
+- Use review agents for meaningful diffs before final handoff.
 
 ## Artifact Boundaries
 
@@ -40,4 +42,21 @@ Every meaningful change should pass through a self-enforcing loop:
 3. Implementation agent fixes valid findings.
 4. Validation runs again.
 5. Durable lessons become tests, docs, rules, or skills.
+
+## Required Checks
+
+Run these before finalizing meaningful changes:
+
+```bash
+make lint
+make test
+make validate-factory
+```
+
+## Container And Runtime Rules
+
+- Treat containers as repeatability boundaries.
+- Keep runtime dependencies owned by the deployable that uses them.
+- Do not put secrets in Dockerfiles, `.env.example`, prompts, MCP configs, or screenshots.
+- Prefer examples that are safe to copy over examples that require hidden credentials.
 

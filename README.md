@@ -15,6 +15,8 @@ This repo is intentionally small. It contains templates, dummy apps, agent instr
 - Agentic code review as a self-enforcing loop.
 - TDD, CI, and validation gates.
 - Containers/runtime-image thinking without requiring real infrastructure.
+- Factory metrics that prove whether the system is improving.
+- Subagent workflows for parallel exploration, implementation, and review.
 
 ## Repository Layout
 
@@ -40,9 +42,25 @@ This repo is intentionally small. It contains templates, dummy apps, agent instr
 ```bash
 make test
 make lint
+make validate-factory
 ```
 
 The sample backend uses only the Python standard library so the starter can run without dependency setup.
+
+## Factory Surfaces
+
+| Surface | Purpose |
+| --- | --- |
+| `AGENTS.md` | Operating contract for agents and contributors |
+| `design.md` | UI and product taste contract |
+| `.agents/skills/` | Reusable agent workflows |
+| `.cursor/rules/` | Cursor-compatible rule examples |
+| `specs/` | Intended product behavior |
+| `plans/` | Implementation strategy before code |
+| `docs/` | Current architecture and operating knowledge |
+| `templates/` | Copyable factory artifacts |
+| `mcp/` | Placeholder tool integration boundary |
+| `scripts/validate_factory.py` | Lightweight repository structure check |
 
 ## Factory Loop
 
@@ -69,3 +87,11 @@ Use this repository as a template. Replace the dummy app with your real product,
 5. Ask a review agent to inspect the diff.
 6. Promote recurring lessons into docs, skills, rules, or tests.
 
+## Useful Docs
+
+- [Software factory principles](docs/SOFTWARE_FACTORY.md)
+- [Factory metrics](docs/FACTORY_METRICS.md)
+- [Model runtime strategy](docs/MODEL_RUNTIME.md)
+- [Subagent workflow](docs/SUBAGENT_WORKFLOW.md)
+- [Container runtime examples](docs/CONTAINERS_AND_RUNTIME_IMAGES.md)
+- [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)

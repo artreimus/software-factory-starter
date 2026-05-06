@@ -1,0 +1,8 @@
+# Sample ownership map. Replace with real teams or handles.
+AGENTS.md @morninghq-arthur
+design.md @morninghq-arthur
+docs/ @morninghq-arthur
+specs/ @morninghq-arthur
+plans/ @morninghq-arthur
+.agents/ @morninghq-arthur
+.github/ @morninghq-arthur
