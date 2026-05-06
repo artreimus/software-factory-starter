@@ -9,7 +9,7 @@ Review the MCP tool approval spec and identify missing security or authorization
 ## Scope
 
 - Read-only.
-- Inspect `specs/use-cases/use-case-003-mcp-tool-approval.md`, `docs/MCP_TRUST_BOUNDARY.md`, and `templates/mcp/TOOL_POLICY.md`.
+- Inspect `specs/use-cases/use-case-003-mcp-tool-approval.md` and `docs/MCP_TRUST_BOUNDARY.md`.
 - Do not edit files or change GitHub settings.
 
 ## Questions To Answer

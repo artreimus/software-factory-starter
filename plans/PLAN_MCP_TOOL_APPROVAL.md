@@ -6,14 +6,14 @@ Provide a copyable planning pattern for adding MCP tools without relying on prom
 
 ## Repo Research
 
-- Files inspected: `docs/MCP_TRUST_BOUNDARY.md`, `templates/mcp/TOOL_POLICY.md`, `templates/mcp/mcp.example.json`, `mcp/example-readonly-server.js`.
+- Files inspected: `docs/MCP_TRUST_BOUNDARY.md`, `mcp/example-readonly-server.js`.
 - Specs consulted: `specs/use-cases/use-case-003-mcp-tool-approval.md`.
 - Existing patterns: placeholder configs use dummy values and avoid real secrets.
 
 ## Implementation Details
 
 - Add `.agents/skills/mcp-tool-policy-review/SKILL.md` for tool-surface review.
-- Keep policy fields in `templates/mcp/TOOL_POLICY.md`: tool name, owner, scopes, approvals, logging, tests.
+- Keep policy fields in `docs/MCP_TRUST_BOUNDARY.md`: tool name, owner, scopes, approvals, logging, tests.
 - Keep example MCP config read-only by default.
 - Document trust-boundary decisions in `docs/MCP_TRUST_BOUNDARY.md`.
 - Add validation entries so required MCP governance files stay present.
