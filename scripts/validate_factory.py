@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 REQUIRED_FILES = [
     "AGENTS.md",
-    "design.md",
+    "DESIGN.md",
     "README.md",
     ".agents/skills/plan-before-code/SKILL.md",
     ".agents/skills/agentic-code-review/SKILL.md",

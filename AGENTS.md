@@ -38,7 +38,7 @@ This is the operating contract for AI agents and contributors in this repository
 Every meaningful change should pass through a self-enforcing loop:
 
 1. Implementation agent writes the change against the plan.
-2. Review agent inspects the diff against `AGENTS.md`, `design.md`, specs, docs, and tests.
+2. Review agent inspects the diff against `AGENTS.md`, `DESIGN.md`, specs, docs, and tests.
 3. Implementation agent fixes valid findings.
 4. Validation runs again.
 5. Durable lessons become tests, docs, rules, or skills.

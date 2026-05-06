@@ -7,7 +7,7 @@ This repo is intentionally small. It contains templates, dummy apps, agent instr
 ## What This Demonstrates
 
 - `AGENTS.md` as the operating contract for humans and agents.
-- `design.md` as a durable design contract.
+- `DESIGN.md` as a durable design contract.
 - `specs/`, `plans/`, and `docs/` as separate artifacts.
 - Spec-driven development where agents research and plan before code.
 - Agent skills for repeatable workflows.
@@ -23,7 +23,7 @@ This repo is intentionally small. It contains templates, dummy apps, agent instr
 ```text
 .
 ├── AGENTS.md
-├── design.md
+├── DESIGN.md
 ├── .agents/skills/
 ├── .cursor/rules/
 ├── apps/
@@ -52,7 +52,7 @@ The sample backend uses only the Python standard library so the starter can run 
 | Surface | Purpose |
 | --- | --- |
 | `AGENTS.md` | Operating contract for agents and contributors |
-| `design.md` | UI and product taste contract |
+| `DESIGN.md` | UI and product taste contract |
 | `.agents/skills/` | Reusable agent workflows |
 | `.cursor/rules/` | Cursor-compatible rule examples |
 | `specs/` | Intended product behavior |

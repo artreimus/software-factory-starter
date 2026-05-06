@@ -5,7 +5,7 @@
 Write down the standards the agent must follow:
 
 - `AGENTS.md` for operating rules.
-- `design.md` for UI taste and constraints.
+- `DESIGN.md` for UI taste and constraints.
 - `specs/` for intended behavior.
 - `plans/` for implementation strategy.
 
