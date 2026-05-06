@@ -22,7 +22,7 @@ The factory should require every new tool surface to document its trust boundary
 
 - [ ] Tool policy names allowed operations and denied operations.
 - [ ] Destructive or external-write tools require explicit approval.
-- [ ] Secrets stay out of prompts, docs, templates, and screenshots.
+- [ ] Secrets stay out of prompts, docs, examples, and screenshots.
 - [ ] Logs are useful without storing sensitive payloads.
 - [ ] Tests or manual validation prove policy is enforced outside the prompt.
 
@@ -30,5 +30,5 @@ The factory should require every new tool surface to document its trust boundary
 
 - [ ] Implementation plan: `plans/PLAN_MCP_TOOL_APPROVAL.md`
 - [ ] Trust-boundary doc: `docs/MCP_TRUST_BOUNDARY.md`
-- [ ] Tool policy template: `templates/mcp/TOOL_POLICY.md`
+- [ ] Tool approval checklist: `docs/MCP_TRUST_BOUNDARY.md`
 - [ ] Policy review skill: `.agents/skills/mcp-tool-policy-review/SKILL.md`

@@ -22,7 +22,6 @@ This is the operating contract for AI agents and contributors in this repository
 - `docs/`: current-state architecture, operations, setup, and implementation reference.
 - `.agents/skills/`: reusable agent workflows.
 - `.cursor/rules/`: editor/agent rules for Cursor-compatible environments.
-- `templates/`: copyable starting points for new specs, plans, prompts, docs, review checklists, and MCP policies.
 
 ## Skill Routing
 
@@ -59,7 +58,7 @@ Every meaningful change should pass through a self-enforcing loop:
 - If intended behavior changes, update `specs/`.
 - If implementation strategy changes, update `plans/`.
 - If current architecture, setup, operations, or governance changes, update `docs/`.
-- If the same workflow repeats twice, promote it into `.agents/skills/` or `templates/`.
+- If the same workflow repeats twice, promote it into `.agents/skills/`, `docs/`, or a focused example file.
 
 ## Required Checks
 

@@ -10,7 +10,6 @@ This repository separates intent, strategy, and current-state knowledge so agent
 | `plans/` | How will this change be implemented? | file-level approach, API shapes, rollout, tests |
 | `docs/` | How does the system currently work? | architecture, operations, governance, security |
 | `.agents/skills/` | How should repeated agent work be performed? | planning, review, TDD, MCP policy |
-| `templates/` | What should new artifacts start from? | PRDs, plans, runbooks, review reports |
 
 ## Update Rules
 
@@ -26,7 +25,7 @@ This repository separates intent, strategy, and current-state knowledge so agent
 - Treating prompts as the only place where permissions are enforced.
 - Letting plans become stale without reconciling them after implementation.
 - Writing docs that describe a desired future state as if it already exists.
-- Adding templates that require private credentials or hidden setup to copy.
+- Adding examples that require private credentials or hidden setup to copy.
 
 ## Example Change Flow
 

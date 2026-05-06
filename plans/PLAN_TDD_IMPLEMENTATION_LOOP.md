@@ -15,7 +15,7 @@ Show how implementation agents should move from plan to code with tests acting a
 - Keep the implementation workflow in `.agents/skills/tdd-implementation-loop/SKILL.md`.
 - Keep validation expectations in `docs/TDD_AND_VALIDATION.md`.
 - Keep command examples in `Makefile` so agents can run them without extra setup.
-- Use `templates/plans/VALIDATION_MATRIX_TEMPLATE.md` when a change has more than one meaningful risk.
+- Use the PR checklist and `docs/TDD_AND_VALIDATION.md` when a change has more than one meaningful risk.
 
 ## Tests
 

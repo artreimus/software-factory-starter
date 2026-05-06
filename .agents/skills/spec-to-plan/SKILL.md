@@ -8,7 +8,7 @@ description: Use when converting a product spec, use case, or PRD into a concret
 ## Workflow
 
 1. Read `AGENTS.md` and the relevant spec.
-2. Inspect current code, docs, templates, and tests that the spec would affect.
+2. Inspect current code, docs, examples, and tests that the spec would affect.
 3. Identify ownership boundaries, data shapes, API signatures, UI states, permission rules, and validation needs.
 4. Create `plans/PLAN_<NAME>.md`.
 5. Include concrete implementation details, not only task steps.

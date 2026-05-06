@@ -23,7 +23,7 @@ The factory should provide a clear review loop where an implementation agent cre
 - [ ] PRs include a review checklist.
 - [ ] Review agents lead with actionable findings.
 - [ ] Valid findings are fixed or explicitly rejected with rationale.
-- [ ] Repeated findings become tests, docs, rules, templates, or skills.
+- [ ] Repeated findings become tests, docs, rules, examples, or skills.
 - [ ] Review output references affected files and validation gaps.
 
 ## Required Artifacts

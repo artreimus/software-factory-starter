@@ -2,7 +2,7 @@
 
 A sample repository for building AI-assisted software teams with repeatable engineering loops.
 
-This repo is intentionally small. It contains templates, dummy apps, agent instructions, review loops, MCP policy examples, and CI scaffolding that show how to move from vibe coding to vibe engineering.
+This repo is intentionally small. It contains dummy apps, agent instructions, docs, specs, plans, review loops, MCP policy examples, and CI scaffolding that show how to move from vibe coding to vibe engineering.
 
 ## What This Demonstrates
 
@@ -33,7 +33,6 @@ This repo is intentionally small. It contains templates, dummy apps, agent instr
 ├── docs/
 ├── specs/
 ├── plans/
-├── templates/
 ├── mcp/
 └── .github/workflows/
 ```
@@ -59,7 +58,6 @@ The sample backend uses only the Python standard library so the starter can run 
 | `specs/` | Intended product behavior |
 | `plans/` | Implementation strategy before code |
 | `docs/` | Current architecture and operating knowledge |
-| `templates/` | Copyable factory artifacts |
 | `mcp/` | Placeholder tool integration boundary |
 | `scripts/validate_factory.py` | Lightweight repository structure check |
 

@@ -34,15 +34,6 @@ REQUIRED_FILES = [
     "plans/PLAN_AGENTIC_REVIEW_LOOP.md",
     "plans/PLAN_MCP_TOOL_APPROVAL.md",
     "plans/PLAN_TDD_IMPLEMENTATION_LOOP.md",
-    "templates/plans/PLAN_TEMPLATE.md",
-    "templates/plans/VALIDATION_MATRIX_TEMPLATE.md",
-    "templates/specs/USE_CASE_TEMPLATE.md",
-    "templates/specs/SPEC_REVIEW_CHECKLIST.md",
-    "templates/review/REVIEW_CHECKLIST.md",
-    "templates/skills/SKILL_TEMPLATE.md",
-    "templates/mcp/TOOL_POLICY.md",
-    "templates/agents/SUBAGENT_BRIEF_TEMPLATE.md",
-    "templates/docs/ADR_TEMPLATE.md",
     ".agents/skills/spec-to-plan/SKILL.md",
     ".agents/skills/tdd-implementation-loop/SKILL.md",
     ".agents/skills/mcp-tool-policy-review/SKILL.md",
@@ -68,6 +59,10 @@ def main() -> None:
     specs = ROOT / "specs" / "use-cases"
     if len(list(specs.glob("*.md"))) < 3:
         raise SystemExit("Expected at least 3 sample use-case specs.")
+
+    templates = ROOT / "templates"
+    if templates.exists():
+        raise SystemExit("The templates/ folder should not exist.")
 
     print("factory validation passed")
 

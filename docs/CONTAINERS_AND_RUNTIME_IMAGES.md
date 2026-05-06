@@ -15,7 +15,8 @@ Containers make the factory reproducible.
 - `apps/service/Dockerfile`: runs the sample backend tests.
 - `apps/web/Dockerfile`: serves the static dummy UI.
 - `.devcontainer/devcontainer.json`: gives contributors a repeatable Python environment.
-- `templates/containers/Dockerfile.service`: copyable service Dockerfile template.
+- `apps/service/Dockerfile`: sample service image boundary.
+- `apps/web/Dockerfile`: sample web image boundary.
 
 ## Example Commands
 
@@ -23,4 +24,3 @@ Containers make the factory reproducible.
 docker build -f apps/service/Dockerfile -t software-factory-service .
 docker build -f apps/web/Dockerfile -t software-factory-web .
 ```
-

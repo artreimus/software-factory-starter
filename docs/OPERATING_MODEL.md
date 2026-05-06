@@ -36,7 +36,7 @@ stateDiagram-v2
 - A plan describes how the repo will change.
 - Code implements only the approved scope.
 - Review checks the diff against specs, plans, docs, tests, and permissions.
-- Durable lessons become tests, docs, templates, rules, or skills.
+- Durable lessons become tests, docs, examples, rules, or skills.
 
 ## Minimum Bar For Meaningful Work
 
