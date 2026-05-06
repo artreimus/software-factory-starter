@@ -24,6 +24,16 @@ This is the operating contract for AI agents and contributors in this repository
 - `.cursor/rules/`: editor/agent rules for Cursor-compatible environments.
 - `templates/`: copyable starting points for new specs, plans, prompts, docs, review checklists, and MCP policies.
 
+## Skill Routing
+
+- Use `.agents/skills/spec-to-plan/SKILL.md` when converting a product spec into an implementation plan.
+- Use `.agents/skills/plan-before-code/SKILL.md` before non-trivial code changes.
+- Use `.agents/skills/tdd-implementation-loop/SKILL.md` when implementing behavior from an approved plan.
+- Use `.agents/skills/agentic-code-review/SKILL.md` for review passes on meaningful diffs.
+- Use `.agents/skills/mcp-tool-policy-review/SKILL.md` for MCP, tool, credential, or permission changes.
+- Use `.agents/skills/subagent-supervisor/SKILL.md` when splitting independent work across agents.
+- Use `.agents/skills/factory-retrospective/SKILL.md` after incidents, regressions, or repeated review findings.
+
 ## Engineering Standards
 
 - Prefer simple, typed, testable code.
@@ -32,6 +42,7 @@ This is the operating contract for AI agents and contributors in this repository
 - Treat prompts as behavior guidance, not authorization.
 - Use explicit permission boundaries for MCP and external tools.
 - Add tests for new behavior and regression fixes.
+- Keep example artifacts copyable: avoid secrets, private endpoints, and hidden dependencies.
 
 ## Review Loop
 
@@ -42,6 +53,13 @@ Every meaningful change should pass through a self-enforcing loop:
 3. Implementation agent fixes valid findings.
 4. Validation runs again.
 5. Durable lessons become tests, docs, rules, or skills.
+
+## Documentation Loop
+
+- If intended behavior changes, update `specs/`.
+- If implementation strategy changes, update `plans/`.
+- If current architecture, setup, operations, or governance changes, update `docs/`.
+- If the same workflow repeats twice, promote it into `.agents/skills/` or `templates/`.
 
 ## Required Checks
 
@@ -59,4 +77,3 @@ make validate-factory
 - Keep runtime dependencies owned by the deployable that uses them.
 - Do not put secrets in Dockerfiles, `.env.example`, prompts, MCP configs, or screenshots.
 - Prefer examples that are safe to copy over examples that require hidden credentials.
-

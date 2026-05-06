@@ -17,6 +17,7 @@ This repo is intentionally small. It contains templates, dummy apps, agent instr
 - Containers/runtime-image thinking without requiring real infrastructure.
 - Factory metrics that prove whether the system is improving.
 - Subagent workflows for parallel exploration, implementation, and review.
+- Repository governance with CODEOWNERS, branch protection expectations, and PR gates.
 
 ## Repository Layout
 
@@ -87,11 +88,25 @@ Use this repository as a template. Replace the dummy app with your real product,
 5. Ask a review agent to inspect the diff.
 6. Promote recurring lessons into docs, skills, rules, or tests.
 
+## Sample Scenarios
+
+The sample artifacts show three common factory workflows:
+
+| Scenario | Spec | Plan | Skill |
+| --- | --- | --- | --- |
+| Build from a product artifact | `specs/use-cases/use-case-001-example.md` | `plans/PLAN_EXAMPLE_FEATURE.md` | `.agents/skills/spec-to-plan/SKILL.md` |
+| Enforce review feedback loops | `specs/use-cases/use-case-002-agentic-review-loop.md` | `plans/PLAN_AGENTIC_REVIEW_LOOP.md` | `.agents/skills/agentic-code-review/SKILL.md` |
+| Govern MCP/tool access | `specs/use-cases/use-case-003-mcp-tool-approval.md` | `plans/PLAN_MCP_TOOL_APPROVAL.md` | `.agents/skills/mcp-tool-policy-review/SKILL.md` |
+
 ## Useful Docs
 
 - [Software factory principles](docs/SOFTWARE_FACTORY.md)
+- [Operating model](docs/OPERATING_MODEL.md)
+- [Docs, specs, and plans contract](docs/DOCS_SPECS_PLANS_CONTRACT.md)
 - [Factory metrics](docs/FACTORY_METRICS.md)
 - [Model runtime strategy](docs/MODEL_RUNTIME.md)
+- [TDD and validation](docs/TDD_AND_VALIDATION.md)
 - [Subagent workflow](docs/SUBAGENT_WORKFLOW.md)
 - [Container runtime examples](docs/CONTAINERS_AND_RUNTIME_IMAGES.md)
 - [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
+- [Repository governance](docs/REPOSITORY_GOVERNANCE.md)

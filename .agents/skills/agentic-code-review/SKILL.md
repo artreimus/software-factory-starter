@@ -15,11 +15,11 @@ Lead with findings. Prioritize:
 - stale docs/specs
 - broken architecture boundaries
 - hidden prompt-only enforcement
-- UI regressions against `design.md`
+- UI regressions against `DESIGN.md`
 
 ## Process
 
-1. Read `AGENTS.md`, `design.md`, and affected specs/docs.
+1. Read `AGENTS.md`, `DESIGN.md`, and affected specs/docs.
 2. Inspect the diff.
 3. Identify findings with file and line references.
 4. For each finding, explain impact and suggested fix.
@@ -34,3 +34,6 @@ Valid findings should become:
 - a docs/spec update
 - a new or updated skill/rule
 
+## Output
+
+Lead with findings ordered by severity. Include file references, the behavioral risk, and the smallest useful fix. Keep summaries secondary to actionable issues.
