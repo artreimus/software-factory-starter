@@ -18,10 +18,10 @@ description: Use when a task requires meaningful implementation. Research the re
    - tests
    - docs/spec updates
    - rollout or migration notes
-6. Implement only after the plan is clear.
-7. Reconcile the plan if live code contradicts assumptions.
+6. Include a Mermaid diagram when it clarifies flow, ownership, or state.
+7. Implement only after the plan is clear.
+8. Reconcile the plan if live code contradicts assumptions.
 
 ## Output
 
 Return the plan path, key assumptions, validation strategy, and any open questions.
-

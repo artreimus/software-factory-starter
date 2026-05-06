@@ -9,4 +9,4 @@ alwaysApply: true
 - Prefer deterministic code guardrails over prompt-only instructions.
 - Ask review agents to inspect diffs before final handoff.
 - Promote repeated workflows into `.agents/skills/`.
-
+- Keep `DESIGN.md`, `docs/`, `specs/`, and `plans/` synchronized with material changes.
