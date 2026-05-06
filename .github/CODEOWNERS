@@ -1,8 +1,10 @@
-# Sample ownership map. Replace with real teams or handles.
-AGENTS.md @morninghq-arthur
-design.md @morninghq-arthur
-docs/ @morninghq-arthur
-specs/ @morninghq-arthur
-plans/ @morninghq-arthur
-.agents/ @morninghq-arthur
-.github/ @morninghq-arthur
+# Repository ownership map.
+* @artreimus
+
+AGENTS.md @artreimus
+DESIGN.md @artreimus
+docs/ @artreimus
+specs/ @artreimus
+plans/ @artreimus
+.agents/ @artreimus
+.github/ @artreimus
